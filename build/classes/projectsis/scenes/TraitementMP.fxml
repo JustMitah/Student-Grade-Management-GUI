@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MPInterface" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectsis.controller.TraitementMPController">
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="773.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/whitie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="742.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-close-window-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="714.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minimize-window-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="719.0" layoutY="1.0" onMouseClicked="#handleMini" prefHeight="6.0" prefWidth="3.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="747.0" layoutY="2.0" onMouseClicked="#handleClose" prefHeight="12.0" prefWidth="20.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="53.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paramétrisation des matières" textAlignment="CENTER" wrappingWidth="256.6666699051857">
+         <font>
+            <Font name="Lucida Bright Demibold" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="-48.0" layoutY="155.0" startX="65.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-19.0" layoutX="17.0" layoutY="175.0" startY="249.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="528.0" layoutX="179.0" layoutY="154.0" startX="136.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="659.0" layoutX="108.0" layoutY="476.0" startX="-100.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-22.0" layoutX="709.0" layoutY="176.0" startY="249.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="52.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vérification des mots de passe" textAlignment="CENTER" wrappingWidth="279.66666877269745">
+         <font>
+            <Font name="Lucida Bright Demibold" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="-45.0" layoutY="49.0" startX="66.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="566.0" layoutX="182.0" layoutY="50.0" startX="150.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="34.0" layoutX="749.0" layoutY="17.0" startY="118.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="34.0" layoutX="21.0" layoutY="16.0" startY="119.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="626.0" layoutX="122.0" layoutY="135.0" startX="-100.0" stroke="#2e3238" strokeWidth="2.0" />
+      <JFXButton buttonType="RAISED" layoutX="659.0" layoutY="434.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goBack" onMouseClicked="#goBack" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Quitter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="572.0" layoutY="81.0" prefHeight="37.0" prefWidth="119.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Connection" textFill="WHITE" AnchorPane.leftAnchor="572.0" AnchorPane.rightAnchor="62.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="35.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de séances de TP :" textAlignment="CENTER" wrappingWidth="178.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView glyphName="KEY" layoutX="144.0" layoutY="117.0" size="25.0" wrappingWidth="19.999998807907104" />
+      <JFXPasswordField layoutX="170.0" layoutY="93.0" prefHeight="25.0" prefWidth="111.0" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="45.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" textAlignment="CENTER" wrappingWidth="90.99999809265137">
+         <font>
+            <Font name="Lucida Bright Regular" size="14.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView glyphName="KEY" layoutX="401.0" layoutY="117.0" size="25.0" wrappingWidth="19.999998807907104" />
+      <JFXPasswordField layoutX="427.0" layoutY="93.0" prefHeight="25.0" prefWidth="111.0" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="302.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" textAlignment="CENTER" wrappingWidth="90.99999809265137">
+         <font>
+            <Font name="Lucida Bright Regular" size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="170.0" layoutY="63.0" prefHeight="25.0" prefWidth="111.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <FontAwesomeIconView glyphName="USER" layoutX="145.0" layoutY="88.0" size="25.0" wrappingWidth="19.999998807907104" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="59.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant" textAlignment="CENTER" wrappingWidth="79.99999809265137">
+         <font>
+            <Font name="Lucida Bright Regular" size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="426.0" layoutY="63.0" prefHeight="25.0" prefWidth="111.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <FontAwesomeIconView glyphName="USER" layoutX="401.0" layoutY="88.0" size="25.0" wrappingWidth="19.999998807907104" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="315.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant" textAlignment="CENTER" wrappingWidth="79.99999809265137">
+         <font>
+            <Font name="Lucida Bright Regular" size="14.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="312.0" layoutY="389.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Valider" textFill="WHITE" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="370.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="424.0" layoutY="434.0" prefHeight="37.0" prefWidth="226.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Saisir les notes des étudiants" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="434.0" prefHeight="37.0" prefWidth="394.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Saisir le nombre de TP présenté par chaque étudiant" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="26.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Traitement de deux matières" textAlignment="CENTER" wrappingWidth="381.9999897480011">
+         <font>
+            <Font name="Lucida Bright Demibold" size="24.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="-57.0" layoutY="29.0" startX="66.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-19.0" layoutX="8.0" layoutY="49.0" startY="426.0" stroke="#2e3238" strokeWidth="2.0" AnchorPane.leftAnchor="7.0" />
+      <Line endX="724.0" layoutX="-16.0" layoutY="426.0" startX="33.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="5.99997091293335" endY="-18.414215087890625" layoutX="760.5562314987183" layoutY="47.0" startX="6.999941825866699" startY="429.0" stroke="#2e3238" strokeWidth="2.0" AnchorPane.rightAnchor="4.029613494873047" />
+      <Line endX="523.0" endY="-2.0" layoutX="243.0" layoutY="30.0" startX="150.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="35.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coefficient de la matière :" textAlignment="CENTER" wrappingWidth="172.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="35.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coefficient de la matière écrite :" textAlignment="CENTER" wrappingWidth="214.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="35.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coefficient de l'examen TP :" textAlignment="CENTER" wrappingWidth="186.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="62.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1ère matière" textAlignment="CENTER" wrappingWidth="110.99999718368053">
+         <font>
+            <Font name="Lucida Bright Demibold" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="-38.0" layoutY="178.0" startX="65.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="289.0" layoutX="41.0" layoutY="177.0" startX="136.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="420.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ème matière" textAlignment="CENTER" wrappingWidth="117.99999718368053">
+         <font>
+            <Font name="Lucida Bright Demibold" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="318.0" layoutY="177.0" startX="65.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="289.0" layoutX="404.0" layoutY="176.0" startX="136.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-6.0" layoutX="27.0" layoutY="185.0" startX="-2.0" startY="197.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="338.0" layoutX="-7.0" layoutY="382.0" startX="33.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-6.0" layoutX="331.0" layoutY="183.0" startY="197.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="-2.0" endY="-6.0" layoutX="385.0" layoutY="184.0" startX="-2.0" startY="197.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="342.0" layoutX="351.0" layoutY="381.0" startX="33.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-6.0" layoutX="693.0" layoutY="182.0" startY="197.0" stroke="#2e3238" strokeWidth="2.0" />
+      <JFXTextField layoutX="255.0" layoutY="202.0" prefHeight="25.0" prefWidth="37.0" />
+      <JFXTextField layoutX="255.0" layoutY="237.0" prefHeight="25.0" prefWidth="37.0" />
+      <JFXTextField layoutX="255.0" layoutY="282.0" prefHeight="25.0" prefWidth="37.0" />
+      <JFXTextField layoutX="255.0" layoutY="320.0" prefHeight="25.0" prefWidth="37.0" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="392.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de séances de TP :" textAlignment="CENTER" wrappingWidth="178.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="392.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coefficient de la matière :" textAlignment="CENTER" wrappingWidth="172.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="392.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coefficient de la matière écrite :" textAlignment="CENTER" wrappingWidth="214.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="392.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coefficient de l'examen TP :" textAlignment="CENTER" wrappingWidth="186.00001166760921">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="612.0" layoutY="202.0" prefHeight="25.0" prefWidth="37.0" />
+      <JFXTextField layoutX="612.0" layoutY="237.0" prefHeight="25.0" prefWidth="37.0" />
+      <JFXTextField layoutX="612.0" layoutY="282.0" prefHeight="25.0" prefWidth="37.0" />
+      <JFXTextField layoutX="612.0" layoutY="320.0" prefHeight="25.0" prefWidth="37.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parent" prefHeight="458.0" prefWidth="681.0" style="-fx-background-color: white;" styleClass="parent" stylesheets="@../css/StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectsis.controller.LauncherController">
+   <children>
+      <ImageView fitHeight="523.0" fitWidth="733.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/whitie.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="708.0" layoutY="4.0" prefHeight="6.0" prefWidth="15.0" text=" " />
+      <ImageView fitHeight="85.0" fitWidth="271.0" layoutX="390.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="4.0">
+         <image>
+            <Image url="@../images/newLOGO%20INSA.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="698.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-close-window-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="188.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="6.0">
+         <image>
+            <Image url="@../images/LOGO%20UEMF.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="363.0" fitWidth="457.0" layoutX="14.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/uemf.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#000000de" fontSmoothingType="LCD" layoutX="488.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ʙɪᴇɴᴠᴇɴᴜᴇ sᴜʀ ʟ'ɪɴᴛᴇʀғᴀᴄᴇ ᴅ'ᴀᴄᴄᴜᴇɪʟ" textAlignment="CENTER" underline="true" wrappingWidth="233.0000098645687">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="516.0" layoutY="341.0" prefHeight="54.0" prefWidth="188.0" style="-fx-background-color: transparent; -fx-border-color: #2E3238;">
+         <children>
+            <ImageView fitHeight="12.0" fitWidth="20.0" layoutX="29.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/gmail.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Problème avec votre expérience?" textAlignment="CENTER" wrappingWidth="166.9999962002039">
+               <font>
+                  <Font name="Lucida Bright Regular" size="10.0" />
+               </font>
+            </Text>
+            <JFXTextField editable="false" focusColor="WHITE" layoutX="55.0" layoutY="21.0" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: transparent;" text="h͏l͏a͏k͏c͏h͏i͏l͏i@͏g͏m͏a͏i͏l.͏c͏o͏m" unFocusColor="#1a0303">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Lucida Bright Regular" size="11.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minimize-window-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="675.0" layoutY="3.0" onMouseClicked="#handleMini" prefHeight="6.0" prefWidth="3.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="703.0" layoutY="4.0" onMouseClicked="#handleClose" prefHeight="12.0" prefWidth="20.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Line endX="100.0" layoutX="415.0" layoutY="128.0" startX="66.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-78.0" layoutX="481.0" layoutY="206.0" startY="197.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="100.0" layoutX="625.0" layoutY="128.0" startX="66.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-78.0" layoutX="725.0" layoutY="206.0" startY="197.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="143.0" layoutX="582.0" layoutY="403.0" startX="-100.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-156.0" layoutX="14.0" layoutY="259.0" startY="185.0" stroke="#2e3238" strokeWidth="3.0" />
+      <Line endY="-78.0" layoutX="471.0" layoutY="180.0" startY="265.75" stroke="#2e3238" strokeWidth="3.0" />
+      <Line endX="186.0" endY="-77.0" layoutX="284.0" layoutY="179.0" startX="-270.0" startY="-76.0" stroke="#2e3238" strokeWidth="3.0" />
+      <Line endX="186.0" endY="-77.0" layoutX="284.0" layoutY="523.0" startX="-270.0" startY="-76.0" stroke="#2e3238" strokeWidth="3.0" />
+      <JFXButton fx:id="LoginE" buttonType="RAISED" layoutX="508.0" layoutY="196.0" onAction="#goToEnseignant" prefHeight="40.0" prefWidth="188.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="ɪɴᴛᴇʀғᴀᴄᴇ ᴇɴsᴇɪɢɴᴀɴᴛ" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="LoginC" buttonType="RAISED" layoutX="508.0" layoutY="263.0" onAction="#goToCoordonateur" prefHeight="40.0" prefWidth="188.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="ɪɴᴛᴇʀғᴀᴄᴇ ᴄᴏᴏʀᴅᴏɴɴᴀᴛᴇᴜʀ" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

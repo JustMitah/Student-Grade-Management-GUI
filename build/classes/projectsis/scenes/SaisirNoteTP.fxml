@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="TPGradeinput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectsis.controller.SaisirNoteTPController">
+   <children>
+      <ImageView fitHeight="363.0" fitWidth="580.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/whitie.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="96.0" layoutX="-12.0" layoutY="33.0" startX="22.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="34.0" layoutX="9.0" layoutY="-1.0" startY="358.36773681640625" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="347.0" endY="0.3642578125" layoutX="222.0" layoutY="32.0" startX="55.0" startY="0.3642578125" stroke="#2e3238" strokeWidth="2.0" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="549.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-close-window-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="521.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minimize-window-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="526.0" layoutY="1.0" onMouseClicked="#handleMini" prefHeight="6.0" prefWidth="3.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="554.0" layoutY="2.0" onMouseClicked="#handleClose" prefHeight="12.0" prefWidth="20.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Line endX="517.0" endY="262.36773681640625" layoutX="54.0" layoutY="96.0" startX="-45.0" startY="262.36773681640625" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="35.0" layoutX="570.0" layoutY="-2.0" startX="2.0" startY="359.36773681640625" stroke="#2e3238" strokeWidth="2.0" />
+      <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="323.0" onAction="#goBack" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Quitter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="PrenomField" editable="false" layoutX="104.0" layoutY="79.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="FiliereField" editable="false" layoutX="352.0" layoutY="79.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="NoteField" layoutX="524.0" layoutY="205.0" prefHeight="25.0" prefWidth="39.0" />
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="31.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :" textAlignment="CENTER" wrappingWidth="47.999996080994606">
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="28.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom :" textAlignment="CENTER" wrappingWidth="70.00000405311584">
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="278.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filière :" textAlignment="CENTER" wrappingWidth="55.22223722934723">
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="290.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNE :" textAlignment="CENTER" wrappingWidth="39.22223722934723">
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="366.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrer la note de TP :" textAlignment="CENTER" wrappingWidth="150.99999702326022">
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="CNEField" editable="false" layoutX="352.0" layoutY="45.0" prefHeight="25.0" prefWidth="135.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="NomField" editable="false" layoutX="104.0" layoutY="45.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="81.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saisir la note de TP" textAlignment="CENTER" wrappingWidth="202.22223073244095">
+         <font>
+            <Font name="Lucida Bright Demibold" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="Table_TP" layoutX="17.0" layoutY="114.0" onMouseClicked="#TP_TableClicked" prefHeight="200.0" prefWidth="353.0" stylesheets="@../css/TableCSS.css">
+        <columns>
+          <TableColumn fx:id="col_CNE" prefWidth="110.0" text="CNE_Étudiant" />
+          <TableColumn fx:id="col_Nom" prefWidth="71.0" text="Nom" />
+            <TableColumn fx:id="col_Prénom" prefWidth="92.0" text="Prénom" />
+            <TableColumn fx:id="col_Filière" prefWidth="78.0" text="Filière" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="416.0" layoutY="260.0" onAction="#EnregistrerTP_Note" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Enregistrer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="Matiere" alignment="CENTER" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" labelFloat="true" layoutX="384.0" layoutY="143.0" prefHeight="48.0" prefWidth="180.0" scaleShape="false" stylesheets="@../css/StyleSheet.css">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXTextField>
+   </children>
+</AnchorPane>

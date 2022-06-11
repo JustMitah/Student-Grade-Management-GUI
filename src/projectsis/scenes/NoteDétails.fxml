@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="VisualiseDetails" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectsis.controller.NoteDétailsController">
+   <children>
+      <ImageView fitHeight="454.0" fitWidth="725.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/whitie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="693.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-close-window-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="665.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minimize-window-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="670.0" layoutY="2.0" onMouseClicked="#handleMini" prefHeight="6.0" prefWidth="3.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="698.0" layoutY="3.0" onMouseClicked="#handleClose" prefHeight="12.0" prefWidth="20.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="43.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste détaillée" textAlignment="CENTER" wrappingWidth="166.22223073244095">
+         <font>
+            <Font name="Lucida Bright Demibold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="-56.0" layoutY="41.0" startX="66.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="34.0" layoutX="10.0" layoutY="7.0" startY="389.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="608.0" layoutX="103.0" layoutY="41.0" startX="110.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="590.0" layoutX="121.0" layoutY="396.0" startX="-109.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-35.0" layoutX="711.0" layoutY="76.0" startY="320.0" stroke="#2e3238" strokeWidth="2.0" />
+      <JFXButton buttonType="RAISED" layoutX="591.0" layoutY="406.0" onAction="#goBack" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Quitter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="Table_TP" layoutX="44.0" layoutY="57.0" prefHeight="325.0" prefWidth="639.0" stylesheets="@../css/TableCSS.css">
+         <columns>
+            <TableColumn fx:id="col_CNE" prefWidth="95.0" text="CNE_Étudiant" />
+            <TableColumn fx:id="col_Nom" prefWidth="86.0" text="Nom" />
+            <TableColumn fx:id="col_Prénom" prefWidth="92.0" text="Prénom" />
+            <TableColumn fx:id="col_ModNom" prefWidth="124.0" text="Nom du module" />
+            <TableColumn fx:id="col_ModMoy" prefWidth="118.0" text="Note du module" />
+            <TableColumn fx:id="col_Valid" prefWidth="122.0" text="Validation" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="oneTime" buttonType="RAISED" layoutX="34.0" layoutY="406.0" onAction="#Display" prefHeight="39.0" prefWidth="189.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Afficher le contenu" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="CNE" editable="false" layoutX="408.0" layoutY="413.0" prefHeight="25.0" prefWidth="79.0" visible="false" />
+      <JFXButton fx:id="printDets" buttonType="RAISED" layoutX="233.0" layoutY="406.0" onAction="#printD" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Imprimer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

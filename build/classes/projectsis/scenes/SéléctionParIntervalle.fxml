@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="SPI" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectsis.controller.SPIController">
+   <children>
+      <ImageView fitHeight="454.0" fitWidth="725.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/whitie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="693.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-close-window-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="665.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-minimize-window-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="670.0" layoutY="2.0" onMouseClicked="#handleMini" prefHeight="6.0" prefWidth="3.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="698.0" layoutY="3.0" onMouseClicked="#handleClose" prefHeight="12.0" prefWidth="20.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="45.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Séléctionner par intervalle" textAlignment="CENTER" wrappingWidth="258.22223073244095">
+         <font>
+            <Font name="Lucida Bright Demibold" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="-56.0" layoutY="41.0" startX="63.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="34.0" layoutX="7.0" layoutY="7.0" startY="438.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="613.0" layoutX="103.0" layoutY="41.0" startX="203.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endX="590.0" layoutX="127.0" layoutY="446.0" startX="-120.0" stroke="#2e3238" strokeWidth="2.0" />
+      <Line endY="-35.0" layoutX="717.0" layoutY="76.0" startY="368.0" stroke="#2e3238" strokeWidth="2.0" />
+      <JFXButton buttonType="RAISED" layoutX="582.0" layoutY="401.0" onAction="#goBack" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Quitter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="440.0" layoutY="401.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Enregistrer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="295.0" layoutY="401.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Modifier" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="154.0" layoutY="401.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Suivant" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="12.0" layoutY="401.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #2e3238; -fx-background-radius: 100;" text="Afficher" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#2e3238de" fontSmoothingType="LCD" layoutX="22.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir un intervalle pour séléctionner la note des étudiants :" textAlignment="CENTER" wrappingWidth="473.22223073244095">
+         <font>
+            <Font name="Lucida Bright Regular" size="15.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="566.0" layoutY="90.0" prefHeight="25.0" prefWidth="30.0" />
+      <JFXTextField layoutX="566.0" layoutY="122.0" prefHeight="25.0" prefWidth="30.0" />
+      <Text fill="#2e3238de" layoutX="353.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La note moyenne générale minimale :" textAlignment="CENTER" wrappingWidth="212.9999819546938">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" layoutX="353.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La note moyenne générale maximale :" textAlignment="CENTER" wrappingWidth="212.99998624622822">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" layoutX="97.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :" textAlignment="CENTER" wrappingWidth="35.99998587369919">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" layoutX="81.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom :" textAlignment="CENTER" wrappingWidth="51.99998624622822">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="135.0" layoutY="87.0" prefHeight="25.0" prefWidth="132.0" />
+      <JFXTextField layoutX="135.0" layoutY="119.0" prefHeight="25.0" prefWidth="132.0" />
+      <JFXTextField layoutX="177.0" layoutY="312.0" prefHeight="25.0" prefWidth="30.0" />
+      <Text fill="#2e3238de" layoutX="51.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La moyenne générale :" textAlignment="CENTER" wrappingWidth="119.99999415874481">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" layoutX="34.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validation du semestre :" textAlignment="CENTER" wrappingWidth="141.99998624622822">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <JFXComboBox layoutX="174.0" layoutY="357.0" prefHeight="25.0" prefWidth="100.0" />
+      <JFXTextField layoutX="576.0" layoutY="357.0" prefHeight="25.0" prefWidth="30.0" />
+      <JFXComboBox layoutX="581.0" layoutY="313.0" prefHeight="25.0" prefWidth="100.0" />
+      <Text fill="#2e3238de" layoutX="440.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrer la nouvelle note :" textAlignment="CENTER" wrappingWidth="129.9999964237213">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#2e3238de" layoutX="465.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir le module :" textAlignment="CENTER" wrappingWidth="106.99998624622822">
+         <font>
+            <Font name="Lucida Bright Regular" size="11.0" />
+         </font>
+      </Text>
+      <TableView layoutX="40.0" layoutY="167.0" prefHeight="144.0" prefWidth="643.0" stylesheets="@../css/TableCSS.css">
+        <columns>
+          <TableColumn prefWidth="307.0" text="C1" />
+          <TableColumn prefWidth="334.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

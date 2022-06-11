@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProjectSIS.jnlp">
+  <information>
+    <title>ProjectSIS</title>
+    <vendor>Kazwell</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ProjectSIS.jar" size="402739" download="eager" />
+    <jar href="lib\GNButton-1.1.0.jar" size="194345" download="eager" />
+    <jar href="lib\controlsfx-8.40.16.jar" size="1416162" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.49-bin.jar" size="1006906" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.49.jar" size="1006904" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="projectsis.Launcher"  name="ProjectSIS" />
+  <update check="always"/>
+</jnlp>
